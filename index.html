@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Day & Night</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="theme-auto">
+  <header class="site-header">
+    <div class="logo">Day<span>&</span>Night</div>
+
+    <div class="mode-controls">
+      <button id="mode-toggle" class="mode-toggle" aria-label="Toggle theme">
+        <span class="mode-toggle__icon">☀️</span>
+        <span class="mode-toggle__label">Auto</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-layer hero-layer--sky"></div>
+      <div class="hero-layer hero-layer--sun"></div>
+      <div class="hero-layer hero-layer--moon"></div>
+      <div class="hero-layer hero-layer--stars"></div>
+
+      <div class="hero-content">
+        <h1>Between sunrise and starlight</h1>
+        <p>
+          A tiny space on the web that shifts with your mood—daylight clarity,
+          midnight calm.
+        </p>
+      </div>
+    </section>
+
+    <section class="panels">
+      <article class="panel panel--day">
+        <h2>Day</h2>
+        <p>
+          Day is for focus, lists, and gentle ambition. Clear lines, warm light,
+          and the feeling that anything could start here.
+        </p>
+        <ul>
+          <li>Fresh starts</li>
+          <li>Open tabs and open windows</li>
+          <li>Coffee rings on a notebook</li>
+        </ul>
+      </article>
+
+      <article class="panel panel--night">
+        <h2>Night</h2>
+        <p>
+          Night is for reflection, soft edges, and quiet ideas. Fewer colors,
+          slower thoughts, deeper questions.
+        </p>
+        <ul>
+          <li>Soft screens and softer playlists</li>
+          <li>Half-written notes</li>
+          <li>Stars you can’t quite count</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="timeline">
+      <h2>A day in three moments</h2>
+      <div class="timeline-grid">
+        <div class="timeline-item">
+          <span class="time">Morning</span>
+          <p>Set one clear intention. Just one. Let the rest be optional.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="time">Afternoon</span>
+          <p>Protect a small block of deep work—no notifications, no guilt.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="time">Night</span>
+          <p>Write down one thing you learned, and one thing you’ll leave for tomorrow.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote">
+      <p>
+        “The day is for building the world outside you.  
+        The night is for listening to the one within.”
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span class="footer-label">Mode:</span>
+    <span id="mode-indicator" class="footer-mode">Auto (based on your time)</span>
+    <span class="footer-dot">•</span>
+    <span class="footer-note">Toggle the sun/moon to choose your own sky.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
